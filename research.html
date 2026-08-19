@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research — Sangmitra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Libre+Franklin:wght@400;500;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav id="site-nav" class="site-nav"></nav>
+
+  <main class="shell-wide">
+    <section class="hero section--research" style="padding-bottom: 1.5rem;">
+      <div class="hero__eyebrow">Research</div>
+      <h1 style="font-size: var(--step-xl);">Publications &amp; Talks</h1>
+    </section>
+
+    <section class="section--research" style="border-top: none; padding-top: 0;">
+      <div class="section__label">Publications</div>
+      <div id="pub-list"></div>
+    </section>
+
+    <section class="section--research">
+      <div class="section__label">Conferences &amp; Talks</div>
+      <div class="timeline">
+
+        <div class="timeline-entry">
+          <div class="timeline-entry__date mono">Jul 2026</div>
+          <div>
+            <div class="timeline-entry__title">Common to Whom? Regional Cultural Commonsense and LLM Bias in India</div>
+            <div class="timeline-entry__org">Oral Presentation — ACL 2026</div>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="timeline-entry">
+          <div class="timeline-entry__date mono">Mar 2026</div>
+          <div>
+            <div class="timeline-entry__title">Research Talk on Cultural Representation in LLMs</div>
+            <div class="timeline-entry__org">ELI Lab &amp; Guldi Lab, Emory University</div>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="timeline-entry">
+          <div class="timeline-entry__date mono">Mar 2026</div>
+          <div>
+            <div class="timeline-entry__title">The Dog the Cat Chased Stumped the Model: Measuring When Language Models Abandon Structure for Shortcuts</div>
+            <div class="timeline-entry__org">Oral Presentation — EACL 2026</div>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="timeline-entry">
+          <div class="timeline-entry__date mono">Feb 2026</div>
+          <div>
+            <div class="timeline-entry__title">AI Panel</div>
+            <div class="timeline-entry__org">Brock University</div>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="timeline-entry">
+          <div class="timeline-entry__date mono">May 2025</div>
+          <div>
+            <div class="timeline-entry__title">Fine-Tuned LLMs are "Time Capsules" for Tracking Societal Bias Through Books</div>
+            <div class="timeline-entry__org">Poster Presentation — NAACL 2025</div>
+            <p></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/research.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("scholar-link").href = window.SITE_CONFIG.links.scholar;
+    });
+  </script>
+</body>
+</html>

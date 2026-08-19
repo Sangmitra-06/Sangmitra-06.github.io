@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sangmitra Madhusudan — NLP Research</title>
+  <meta name="description" content="Research on cultural representation and bias in large language models." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Libre+Franklin:wght@400;500;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav id="site-nav" class="site-nav"></nav>
+
+  <main class="shell">
+
+    <section class="hero">
+      <div class="hero__grid">
+        <div>
+          <div class="hero__byline"><strong>Sangmitra Madhusudan</strong></div>
+          <div class="hero__institution" id="institution-line"></div>
+
+          <h1>Studying cultural representation, interpretability, and bias in large language models</h1>
+
+          <p class="hero__intro">
+            I build benchmarks and metrics that test how <span class="accent-text swatch-blue">fairly</span> language models represent
+            <span class="accent-text swatch-blue">culture</span>, whether their apparent understanding of sentence structure is
+            <span class="accent-text swatch-orange">genuine or a shortcut</span>, and where
+            <span class="accent-text swatch-red">bias</span> shows up in their behavior.
+          </p>
+
+          <div class="hero__links" id="hero-links"></div>
+        </div>
+
+        <div class="photo-frame-wrap">
+          <div class="photo-frame">
+            <span class="photo-frame__tick photo-frame__tick--tl" aria-hidden="true"></span>
+            <span class="photo-frame__tick photo-frame__tick--br" aria-hidden="true"></span>
+            <img src="assets/photo.jpeg" alt="Sangmitra Madhusudan">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--research">
+      <div class="section__label">Recent publications</div>
+      <div id="recent-pubs-list"></div>
+      <a class="section__more" href="research.html">View all publications &rarr;</a>
+    </section>
+
+    <section class="section--education">
+      <div class="section__label">Education</div>
+      <div class="timeline">
+
+        <div class="timeline-entry">
+          <div class="timeline-entry__date mono">2025 — present</div>
+          <div>
+            <div class="timeline-entry__title">MSc, Computer Science</div>
+            <div class="timeline-entry__org">Brock University — supervised by Dr. Ali Emami (primary advisor) and Dr. Renata Dividino</div>
+            <div class="timeline-entry__detail">GPA: 4.0</div>
+          </div>
+        </div>
+
+        <div class="timeline-entry">
+          <div class="timeline-entry__date mono">2021 — 2025</div>
+          <div>
+            <div class="timeline-entry__title">BSc, Computer Science (Co-op)</div>
+            <div class="timeline-entry__org">Brock University</div>
+            <p>Concentration in Artificial Intelligence · Minor in Interactive Arts and Sciences · MicroCertificate in Geomatics.</p>
+            <div class="timeline-entry__details">
+              <div class="timeline-entry__detail">First Class Standing</div>
+              <div class="timeline-entry__detail">GPA: 4.0</div>
+            </div>
+            
+            <p></p>
+          </div>
+        </div>
+
+
+      </div>
+      <a class="section__more section__more--cv" href="portfolio.html">View full CV &rarr;</a>
+    </section>
+
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const cfg = window.SITE_CONFIG;
+      document.getElementById("institution-line").textContent = `${cfg.institution} — ${cfg.advisors}`;
+
+        document.getElementById("hero-links").innerHTML = `
+        <a class="pill-link pill-link--scholar" href="${cfg.links.scholar}" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="pill-link pill-link--email" href="${cfg.links.email}">Email</a>
+        ${cfg.links.cv ? `<a class="pill-link pill-link--cv" href="${cfg.links.cv}" target="_blank" rel="noopener">CV</a>` : ""}
+        ${cfg.links.github ? `<a class="pill-link pill-link--github" href="${cfg.links.github}" target="_blank" rel="noopener">GitHub</a>` : ""}
+        ${cfg.links.linkedin ? `<a class="pill-link pill-link--linkedin" href="${cfg.links.linkedin}" target="_blank" rel="noopener">LinkedIn</a>` : ""}
+      `;
+    });
+  </script>
+</body>
+</html>

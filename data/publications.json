@@ -1,0 +1,80 @@
+{
+
+  "categories": [
+    {
+      "name": "Cultural representation",
+      "publications": [
+        {
+          "title": "Common to Whom? Regional Cultural Commonsense and LLM Bias in India",
+          "authors": "Sangmitra Madhusudan, Trush Shank More, Steph Buongiorno, Renata Dividino, Jad Kabbara, Ali Emami",
+          "venue": "ACL 2026 (Main)",
+          "year": 2026,
+          "tags": ["Culture", "Bias"],
+          "award": "",
+          "links": [
+            { "label": "paper", "url": "https://aclanthology.org/2026.acl-long.249/" },
+            { "label": "data", "url": "https://huggingface.co/datasets/Sangmitra-06/INDICA" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bias and fairness",
+      "publications": [
+        {
+          "title": "Fine-Tuned LLMs are \u201cTime Capsules\u201d for Tracking Societal Bias Through Books",
+          "authors": "Sangmitra Madhusudan, Robert Morabito, Skye Reid, Nikta Gohari Sadr, Ali Emami",
+          "venue": "NAACL 2025 (Main)",
+          "year": 2025,
+          "tags": ["Bias"],
+          "award": "Best Paper Nomination",
+          "links": [
+            { "label": "paper", "url": "https://aclanthology.org/2025.naacl-long.118/" },
+            { "label": "data", "url": "https://github.com/Sangmitra-06/BookPAGE" }
+          ]
+        },
+        {
+          "title": "STOP! Benchmarking Large Language Models with Sensitivity Testing on Offensive Progressions",
+          "authors": "Robert Morabito, Sangmitra Madhusudan, Tyler McDonald, Ali Emami",
+          "venue": "EMNLP 2025 (Main)",
+          "year": 2025,
+          "tags": ["Bias", "Safety"],
+          "award": "Societal Impact Award",
+          "links": [
+            { "label": "paper", "url": "https://aclanthology.org/2024.emnlp-main.243/" },
+            { "label": "data", "url": "https://huggingface.co/datasets/Robert-Morabito/STOP" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Interpretability",
+      "publications": [
+        {
+          "title": "ZIP: Quantifying Which Words Matter in Zero-Shot Instructional Prompts",
+          "authors": "Nikta Gohari Sadr, Sangmitra Madhusudan, Arash Asgari, Hassan Sajjad, Laleh Seyyed-Kalantari, Ali Emami",
+          "venue": "*SEM 2026",
+          "year": 2026,
+          "tags": ["Interpretability", "Prompting"],
+          "award": "",
+          "links": [
+            { "label": "paper", "url": "https://aclanthology.org/2026.starsem-conference.30/" },
+            { "label": "data", "url": "https://github.com/niktaas/ZIP" }
+          ]
+        },
+        {
+          "title": "The Dog the Cat Chased Stumped the Model: Measuring When Language Models Abandon Structure for Shortcuts",
+          "authors": "Sangmitra Madhusudan, Kaige Chen, Ali Emami",
+          "venue": "EACL 2026 (Main)",
+          "year": 2026,
+          "tags": ["Interpretability", "Reasoning"],
+          "award": "",
+          "links": [
+            { "label": "paper", "url": "https://aclanthology.org/2026.eacl-long.19/" },
+            { "label": "data", "url": "https://huggingface.co/datasets/Sangmitra-06/CENTERBENCH" }
+          ]
+        }
+      ]
+    }
+  ]
+}
